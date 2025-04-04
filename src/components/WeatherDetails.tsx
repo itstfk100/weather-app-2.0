@@ -17,11 +17,11 @@ export interface WeatherDetailProps {
 
 export default function WeatherDetails(props: WeatherDetailProps) {
   const {
-    visability = "25km",
+    visability = "25 km",
     humidity = "61%",
     windSpeed = "7 km/h",
     airPressure = "1012 hPa",
-    sunrise = "6.20",
+    sunrise = "6:20",
     sunset = "18:48"
   } = props;
 
@@ -29,32 +29,32 @@ export default function WeatherDetails(props: WeatherDetailProps) {
     <>
       <SingleWeatherDetail
         icon={<LuEye />}
-        information="Visability"
+        information="Visibilidad"
         value={visability}
       />
       <SingleWeatherDetail
         icon={<FiDroplet />}
-        information="Humidity"
+        information="Humedad"
         value={humidity}
       />
       <SingleWeatherDetail
         icon={<MdAir />}
-        information="Wind speed"
+        information="Velocidad del viento"
         value={windSpeed}
       />
       <SingleWeatherDetail
         icon={<ImMeter />}
-        information="Air Pressure"
+        information="Presión atmosférica"
         value={airPressure}
       />
       <SingleWeatherDetail
         icon={<LuSunrise />}
-        information="Sunrise"
+        information="Amanecer"
         value={sunrise}
       />
       <SingleWeatherDetail
         icon={<LuSunset />}
-        information="Sunset"
+        information="Atardecer"
         value={sunset}
       />
     </>
